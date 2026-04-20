@@ -22,4 +22,4 @@ console.log(accountCity);
 
 console.table([accountId, accountEmail, accountPassword, accountCity]);
 
-// prefer not to use var because of its issue in functional and block scope
+// prefer not to use var because of its issue in functional and block scope.
