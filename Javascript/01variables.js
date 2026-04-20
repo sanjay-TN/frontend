@@ -21,3 +21,5 @@ accountCity = "chennai"; // reassigning the value to the variable allowed withou
 console.log(accountCity);
 
 console.table([accountId, accountEmail, accountPassword, accountCity]);
+
+// prefer not to use var because of its issue in functional and block scope
