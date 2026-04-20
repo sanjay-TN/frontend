@@ -44,3 +44,20 @@ let a = 45;
 a = String(a);
 console.log(typeof a); // output string
 console.log(a); // output "45" because it is now a string, not a number
+
+// operations
+
+console.log("5" + 5); // output "55" because the number 5 is converted to a string and concatenated with "5"
+console.log(1 + 2 + "3"); // output "33" because 1 and 2 are added together to get 3, and then the result is concatenated with "3" to get "33"
+console.log("4" + 1 + 2); // output "412" because "4" is concatenated with 1 to get "41", and then "41" is concatenated with 2 to get "412"
+
+// postfix and prefix increment operators
+let x = 5;
+let y = x++;
+console.log(x); // output 6 because x is incremented after the value of y is assigned
+console.log(y); // output 5 because y is assigned the value of x before it is incremented
+
+let x1 = 5;
+let y1 = ++x1;
+console.log(x1); // output 6 because x1 is incremented before the value of y1 is assigned
+console.log(y1); // output 6 because y1 is assigned the value of x1 after it is incremented
