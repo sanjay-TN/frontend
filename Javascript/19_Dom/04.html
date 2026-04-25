@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul class="abc">
+      <li>java</li>
+    </ul>
+  </body>
+  <script>
+    function addlang(lang) {
+      const li = document.createElement("li");
+      li.innerText = `${lang}`;
+      document.querySelector(".abc").appendChild(li);
+    }
+    addlang("python");
+    addlang("c++");
+
+    function add(lang) {
+      const a = document.createElement("li");
+      a.appendChild(document.createTextNode(lang));
+      document.querySelector(".abc").appendChild(a);
+    }
+    add("ruby");
+
+    // editing values
+    const first = document.querySelector("li:first-child");
+    // console.log(first);
+    first.outerHTML = "<li>js</li>";
+
+    const second = document.querySelector("li:nth-child(2)");
+    // console.log(second);
+    second.innerHTML = "typescript";
+
+    // removing elements
+
+    const last = document.querySelector("li:last-child");
+    console.log(last);
+    last.remove();
+
+    const div = document.createElement("div");
+    div.setAttribute("id", "div");
+    console.log(div);
+
+    div.innerText = "welcome to dom";
+
+    const d = document.body.appendChild(div);
+
+    const b = document.createElement("h1");
+    b.innerHTML = "this is inside div";
+    b.style.fontSize = "23px";
+    b.style.color = "purple";
+    d.appendChild(b);
+    console.log(b);
+  </script>
+</html>
