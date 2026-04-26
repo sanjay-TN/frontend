@@ -1,0 +1,39 @@
+h1 {
+  color: rgb(100, 184, 184);
+  text-align: center;
+}
+body {
+  size: 100px;
+  padding: 10px;
+  /* border: 1px dashed rgb(190, 31, 58); */
+}
+.button {
+  color: black;
+  display: inline-flex;
+  border: 2px solid rgb(21, 20, 20);
+  height: 100px;
+  width: 100px;
+
+  padding-left: 20px;
+  /* text-align: center; */
+  align-items: center;
+  align-content: center;
+}
+
+#yellow {
+  background-color: yellow;
+  /* display: inline-block; */
+}
+#grey {
+  background-color: grey;
+}
+#blue {
+  background-color: blue;
+}
+#white {
+  background-color: white;
+}
+.div {
+  text-align: center;
+  /* align-items: center; */
+}
