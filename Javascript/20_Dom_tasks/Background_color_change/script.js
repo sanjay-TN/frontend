@@ -19,7 +19,7 @@ button.forEach((btn) => {
     //   body.style.backgroundColor = c.target.id;
     // }
     // if (c.target.id === "yellow") {
-    //   body.style.backgroundColor = c.target.id;
+    // body.style.backgroundColor = c.target.id;
 
     switch (c.target.id) {
       case "grey":
