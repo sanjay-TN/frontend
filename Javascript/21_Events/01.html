@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    img {
+      height: 100px;
+      width: 100px;
+    }
+    div {
+      size: 200px;
+      height: 100px;
+      width: 100px;
+      background-color: wheat;
+      margin: auto;
+      /* padding-bottom: 20px; */
+    }
+  </style>
+  <body style="background-color: black; color: aliceblue">
+    <h2>Image gallery</h2>
+    <ul>
+      <li id="a">
+        <div id="first">
+          <img
+            src="https://images.pexels.com/photos/37216166/pexels-photo-37216166.jpeg"
+            alt=""
+          />
+        </div>
+      </li>
+      <hr />
+      <li id="a">
+        <div id="second">
+          <img
+            src="https://images.pexels.com/photos/12937075/pexels-photo-12937075.jpeg"
+            alt=" cake"
+          />
+        </div>
+      </li>
+      <hr />
+      <li>
+        <div id="third">
+          <img
+            src="https://images.pexels.com/photos/11130920/pexels-photo-11130920.jpeg"
+            alt="man"
+          />
+        </div>
+      </li>
+      <hr />
+      <li>
+        <div id="four">
+          <img
+            src="https://images.pexels.com/photos/15330403/pexels-photo-15330403.jpeg"
+            alt="lotus"
+          />
+        </div>
+        <hr />
+      </li>
+    </ul>
+  </body>
+  <script>
+    // document.getElementById("a").addEventListener(
+    //   "click",
+    //   function (e) {
+    //     // e.stopPropagation();
+    //     // e.preventDefault();
+    //     console.log(e);
+    //   },
+    //   true,
+    // );
+
+    document.getElementById("second").addEventListener("click", function (e) {
+      console.log(e);
+      alert("cake clicked");
+      // e.stopPropagation;
+      // e.preventDefault();
+    });
+  </script>
+</html>
